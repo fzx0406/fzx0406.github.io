@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b27">
+  <meta name="description" content="Zixian Fang (方子贤), Ph.D. student at Shanghai Maritime University. Shipping network resilience, multi-agent reinforcement learning, and LLM-based modeling of real shipping disruptions.">
+  <title>Zixian Fang (方子贤) - Homepage</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#about-me">Skip to content</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="masthead">
+    <nav class="masthead-inner" aria-label="Main navigation">
+      <a class="brand" href="#about-me">Zixian Fang’s Page</a>
+      <button class="menu-toggle" type="button" aria-label="Navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#honors">Honors and Awards</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar glass" aria-label="Profile">
+      <img class="portrait" src="portrait.jpg" width="242" height="326" alt="Portrait of Zixian Fang">
+      <div class="profile-copy">
+        <p class="name">Zixian Fang <span lang="zh-CN">(方子贤)</span></p>
+        <div class="role-mark">
+          <svg viewBox="0 0 96 76" fill="none" aria-hidden="true">
+            <path d="M9 61 29 27 49 44 68 18 87 40M9 61l40-17 31 20 7-24-38 4m-20-17 39-9" stroke="#8675e5" stroke-width="1.5"/>
+            <ellipse cx="48" cy="39" rx="38" ry="20" transform="rotate(-24 48 39)" stroke="#a28cff" stroke-dasharray="2 4"/>
+            <g fill="#bcb0ff"><circle cx="9" cy="61" r="3"/><circle cx="29" cy="27" r="4"/><circle cx="49" cy="44" r="6"/><circle cx="68" cy="18" r="4"/><circle cx="87" cy="40" r="3"/><circle cx="80" cy="64" r="3"/></g>
+            <circle cx="49" cy="44" r="3" fill="#e5dcff"/>
+          </svg>
+          <span class="role">Ph.D. Student</span>
+        </div>
+        <ul class="contact">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Shanghai, China</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 2v5c3 3 9 3 12 0v-5m4-2v6"/></svg><span>School of Economics and Management,<br>Shanghai Maritime University</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:Fangzixian0406@yeah.net">Email</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="page glass">
+      <section id="about-me" aria-labelledby="about">
+        <h1 id="about">About Me</h1>
+        <p>Hi, I am <strong>Zixian Fang</strong> (<span lang="zh-CN">方子贤</span>). I am in the doctoral stage of the integrated master’s and doctoral program in Management Science and Engineering at the <a href="https://www.shmtu.edu.cn/">School of Economics and Management, Shanghai Maritime University</a>. I received my bachelor’s degree in Logistics Management from Jiangxi Science and Technology Normal University.</p>
+        <p>I study how shipping networks break down and recover. My research brings together maritime network analysis, large language models (LLMs), and multi-agent reinforcement learning to understand how local disruptions spread and how carriers and ports respond.</p>
+        <ul>
+          <li><strong>Network dismantling with reinforcement learning.</strong> I explore how agents can learn which ports or routes to disrupt, and in what order, in a simulated shipping network. My aim is to identify which sequences trigger cascading failures and how the set of critical ports changes as disruptions accumulate.</li>
+          <li><strong>Reconstructing real shipping disruptions in simulation.</strong> I investigate how LLMs can extract event timelines, affected ports and routes, and operating constraints from reports of actual disruptions. I aim to use those scenarios to simulate decisions by carriers and ports, such as rerouting vessels and handling diverted cargo, and test whether the simulated delays and recovery match what was observed.</li>
+        </ul>
+        <p>You can reach me at <a href="mailto:Fangzixian0406@yeah.net">Fangzixian0406@yeah.net</a>.</p>
+      </section>
+
+      <section id="publications" aria-labelledby="research">
+        <h2 id="research"><span aria-hidden="true">📝</span> Publications</h2>
+        <article class="paper-box" id="geo2flow" aria-labelledby="geo2flow-title">
+          <div class="paper-visual">
+            <span class="badge">Transportation Research Part C</span>
+            <a class="paper-figure" href="geo2flow.png" target="_blank" rel="noopener" aria-label="Open full-size Geo2Flow figure">
+              <img src="geo2flow.png" width="2400" height="1290" alt="Geo2Flow architecture showing spatial embeddings, scale-specific experts, and fine-tuning" loading="lazy">
+            </a>
+          </div>
+          <div class="paper-text">
+            <h3 id="geo2flow-title">Geo2Flow: Hierarchical urban commuting flow prediction via multi-scale satellite-behavioral alignment and mixture of experts</h3>
+            <p><strong>Zixian Fang</strong> (fourth author) · <em>Accepted</em></p>
+            <ul><li>Predicts commuting flows from satellite imagery, distance, and four nested spatial scales. In Shanghai, RMSE fell by up to 44% and CPC rose by up to 18% compared with baselines.</li></ul>
+          </div>
+        </article>
+        <article class="paper-box" aria-labelledby="unicommerce-title">
+          <div class="paper-visual">
+            <span class="badge">IEEE Transactions on Consumer Electronics</span>
+            <a class="paper-figure" href="unicommerce.png" target="_blank" rel="noopener" aria-label="Open full-size UniCommerce-1.5 figure">
+              <img src="unicommerce.png" width="2400" height="1375" alt="UniCommerce framework showing data construction, prompt design, fine-tuning, and evaluation" loading="lazy">
+            </a>
+          </div>
+          <div class="paper-text">
+            <h3 id="unicommerce-title"><a href="https://doi.org/10.1109/TCE.2026.3712397">UniCommerce-1.5: A Compact Unified E-commerce LLM with Structured Prompts and CoT-Guided Teacher Annotation</a></h3>
+            <p>Fenglan Luo, <strong>Zixian Fang</strong>, Hao Yu, Jackson Jinhong Mi, Zongsheng Huang, Chonghao Zhang</p>
+            <ul><li>Uses structured prompts and chain-of-thought teacher annotations to bring retrieval, matching, recommendation, and question answering into one compact e-commerce model.</li></ul>
+          </div>
+        </article>
+        <article class="paper-box" aria-labelledby="ansga-title">
+          <div class="paper-visual">
+            <span class="badge">Computers &amp; Industrial Engineering</span>
+            <a class="paper-figure" href="ansga.png" target="_blank" rel="noopener" aria-label="Open full-size A-NSGA-II figure">
+              <img src="ansga.png" width="3392" height="1783" alt="Closed-loop supply chain showing forward and reverse flows between suppliers, factories, distribution, customers, and recovery facilities" loading="lazy">
+            </a>
+          </div>
+          <div class="paper-text">
+            <h3 id="ansga-title"><a href="https://doi.org/10.1016/j.cie.2026.112261">A-NSGA-II: An Agentic-Guided Evolutionary Framework for Multi-Objective Optimization with Application to Closed-Loop EV Supply Chains</a></h3>
+            <p>Chen Zhang, <strong>Zixian Fang</strong>, Yufeng Guo, Zongsheng Huang</p>
+            <ul><li>Uses two language-model agents to guide evolutionary search. In the EV battery supply chain case, selected solutions cut emissions by more than 26% and improved social benefits by more than 8% relative to the baseline.</li></ul>
+          </div>
+        </article>
+        <article class="paper-box" aria-labelledby="semiconductor-title">
+          <div class="paper-visual">
+            <span class="badge">Reliability Engineering &amp; System Safety</span>
+            <a class="paper-figure" href="semiconductor.png" target="_blank" rel="noopener" aria-label="Open full-size semiconductor trade network figure">
+              <img src="semiconductor.png" width="664" height="474" alt="Semiconductor trade network framework showing data preprocessing, dynamic SIR risk propagation, and resilience assessment" loading="lazy">
+            </a>
+          </div>
+          <div class="paper-text">
+            <h3 id="semiconductor-title"><a href="https://doi.org/10.1016/j.ress.2026.113436">Dynamic Risk Propagation and Resilience in the Global Semiconductor Trade Network: A Dual-Modulated SIR Model</a></h3>
+            <p>Chonghao Zhang, Xianhao Chen, Zongsheng Huang, <strong>Zixian Fang</strong>, Hao Yu, Xingyi Zhu, Xiao Luo</p>
+            <ul><li>Models how disruptions spread across layers of the global semiconductor trade network and identifies important trading economies with low resilience.</li></ul>
+          </div>
+        </article>
+        <ul class="other-papers">
+          <li><span class="journal">Knowledge-Based Systems</span> TSMG-Net: Predicting Patent Technology Evolution via Temporal-Semantic Fusion and Multi-Scale Graph Learning. <em>First author · Conditionally accepted after first review.</em></li>
+          <li><span class="journal">Journal of Transport Geography</span> Unraveling the Spatiotemporal Dynamics of Cascading Port Disruptions in the Global Liner Shipping Network. <em>Third author · Revision after first review.</em></li>
+          <li><span class="journal">Reliability Engineering &amp; System Safety</span> Critical Port Set Identification in Global Container Shipping Networks Considering Capacity Degradation and Load Redistribution. <em>Third author · Revision after first review.</em></li>
+          <li><span class="journal">Journal of Transport Geography</span> From Risk Origins to Cross-Regional Exposure: Mapping the Changing Geography of Global Shipping Risk with LLM-Enabled Event Intelligence. <em>Second author (supervisor first author) · Revision after first review.</em></li>
+          <li><span class="journal">Reliability Engineering &amp; System Safety</span> Recovery dynamics reshape critical-port priorities in the global liner shipping network. <em>First author · Revision after first review.</em></li>
+          <li><span class="journal">IEEE Transactions on Intelligent Transportation Systems</span> A Behaviour-Aware Direction-Gated Mixture-of-Experts Network for Short-Term Expressway Speed Prediction. <em>Second author · Under first review.</em></li>
+          <li><span class="journal">Journal of Transport Geography</span> The Geography of Port Criticality: Trade-Bloc-Conditioned Portfolios in Global Liner Shipping. <em>Second author · Revision after first review.</em></li>
+          <li><span class="journal">Transportation Research Part E: Logistics and Transportation Review</span> When cargo service recovers but disruption persists: Operational recovery priorities in global crude-oil shipping. <em>First author · Submitted.</em></li>
+        </ul>
+      </section>
+
+      <section id="honors" aria-labelledby="honors-title">
+        <h2 id="honors-title"><span aria-hidden="true">🎖️</span> Honors and Awards</h2>
+        <p>I received the <strong>National Scholarship</strong>, a university first-class scholarship, and the university’s Outstanding Student award. I have earned <strong>29 national and 14 provincial awards</strong> in competitions.</p>
+        <ul>
+          <li><em>2023</em> — National Grand Prize, National Business Competition Simulation Contest.</li>
+          <li><em>2023</em> — National Grand Prize, National Human Resources Decision-Making Competition.</li>
+          <li><em>2023</em> — National First Prize, “Xuechuang Cup” College Student Entrepreneurship Simulation Competition.</li>
+          <li><em>2023</em> — National Silver Award, China College Students Engineering Practice and Innovation Competition.</li>
+          <li><em>2022</em> — National Grand Prize, “Zhihan Cup” Digital Business Operations and Innovation Challenge.</li>
+          <li><em>2022</em> — National First Prize, “Yimu Cup” Supply Chain Finance Competition.</li>
+        </ul>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title"><span aria-hidden="true">📖</span> Education</h2>
+        <ul>
+          <li><em>2026.09 – Present</em> — Doctoral stage of the integrated master’s and doctoral program (<span lang="zh-CN">硕博连读</span>) in Management Science and Engineering, Shanghai Maritime University.</li>
+          <li><em>2025.09 – 2026.06</em> — Master’s stage of the same program, Shanghai Maritime University.</li>
+          <li><em>2021.09 – 2025.06</em> — Bachelor’s degree in Logistics Management, Jiangxi Science and Technology Normal University. GPA 4.06/5.00, ranked 6th of 90.</li>
+        </ul>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title"><span aria-hidden="true">💻</span> Experience</h2>
+        <ul>
+          <li><em>2022.07 – 2023.12</em> — Trainer and organizing committee member, Beijing Jinyi Bowen Technology Co., Ltd. Led more than 20 training sessions and helped organize more than 10 competitions.</li>
+          <li><strong>Research projects.</strong> Led or contributed to two provincial undergraduate innovation projects, the midterm review of Nanchang’s 14th Five-Year Plan, and projects with companies and government agencies.</li>
+          <li><strong>Academic service.</strong> Journal peer reviewer.</li>
+          <li><strong>Tools.</strong> Python, ArcGIS, SPSS, Stata, and Microsoft Office.</li>
+        </ul>
+      </section>
+
+      <div id="affiliations" class="affiliations" aria-label="Universities">
+        <!-- Shanghai Maritime University Photo Archive: https://scm.shmtu.edu.cn/photo/2022/0609/c10555a175554/page.htm -->
+        <a class="university" href="https://www.shmtu.edu.cn/"><img class="shmtu-wordmark" src="shmtu.png" width="3608" height="928" alt="Shanghai Maritime University" title="Logo source: Shanghai Maritime University Photo Archive" loading="lazy"></a>
+        <a class="university" href="https://www.jxstnu.edu.cn/"><img src="jxstnu.png" width="362" height="70" alt="Jiangxi Science and Technology Normal University" loading="lazy"></a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
